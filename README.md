@@ -1,2 +1,2 @@
 # php-basic-kadai
-phpの基礎学習です
+php基礎学習中の課題
