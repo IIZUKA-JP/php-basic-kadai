@@ -9,10 +9,11 @@
 <body>
 <p>
   <?php
-  $order = '昇順にソートします';
 
-  echo $order . '<br>';
-
+  function sort_2way($order) {
+    
+    echo $order  . '<br>';
+  
   if ($order === '昇順にソートします') {
     $nums = [15, 4, 18, 23, 10];
     sort($nums);
@@ -20,18 +21,18 @@
     echo $num . "\n" . '<br>';
     }
   }
-
-  $order = '降順にソートします';
-
-  echo $order . '<br>';
-
-  if ($order === '降順にソートします') {
+  elseif ($order === "降順にソートします") {
     $nums = [15, 4, 18, 23, 10];
     rsort($nums);
     foreach ($nums as $num) {
         echo $num . "\n".'<br>';
+     }
     }
   }
+
+    echo sort_2way("昇順にソートします") . '<br>';
+    echo sort_2way("降順にソートします") . '<br>';
+
   ?>
 </P>
 </body>
